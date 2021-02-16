@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import { API_KEY } from '@env';
 import { useNavigation } from '@react-navigation/native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import { Container, Form, Input, Title, Button } from './styles';
+import {
+  Container,
+  Form,
+  Input,
+  Header,
+  Title,
+  Button,
+  Description,
+} from './styles';
 import Favorites from '../../components/Favorites';
 import api from '../../config/api';
 
@@ -43,7 +51,11 @@ const HomeScreen: React.FC = () => {
   return (
     <Container>
       <SafeAreaView style={{ flex: 1 }}>
-        <Title>Cinema APP</Title>
+        <Header>
+          <Title>Cinema APP</Title>
+          <Description>Bem vindo ao espetacular mundo do cinema!</Description>
+        </Header>
+
         <Form>
           <Input
             value={input}

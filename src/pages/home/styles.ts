@@ -13,12 +13,20 @@ export const Container = styled(LinearGradient).attrs({
   flex: 1;
 `;
 
+export const Header = styled.View`
+  margin-top: 10px;
+  padding: 0 20px;
+`;
+
 export const Title = styled.Text`
   font-size: 32px;
   color: #fff;
   font-weight: bold;
-  margin-top: 10px;
-  padding: 0 20px;
+`;
+
+export const Description = styled.Text`
+  font-size: 13px;
+  color: #fff;
 `;
 
 export const Form = styled.View`

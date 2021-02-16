@@ -5,7 +5,7 @@
 ##### O projeto tem como finalidade facilitar a listagem e pesquisa de filmes, para que escolhamos ou removamos os nossos favoritos (às vezes um filme enjoa).
 
 <h1 align=center>
-<img width="300" height="500" src="https://i.imgur.com/emA9bw4.jpg" />
+<img width="300" height="500" src="https://i.imgur.com/AGXaKYC.jpg" />
 <img width="300" height="500" src="https://i.imgur.com/1QiaPvn.jpg" />
 
 </h1>
