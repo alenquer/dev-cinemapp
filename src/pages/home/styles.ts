@@ -54,14 +54,3 @@ export const Button = styled.TouchableOpacity`
   border-radius: 4px;
   padding: 0 14px;
 `;
-
-export const List = styled.FlatList.attrs({
-  contentContainerStyle: { paddingHorizontal: 20 },
-  showsVerticalScrollIndicator: false,
-})`
-  margin-top: 20px;
-`;
-
-export const Separator = styled.View`
-  margin-bottom: 15px;
-`;

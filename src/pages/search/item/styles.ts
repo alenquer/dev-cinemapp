@@ -18,7 +18,7 @@ export const Poster = styled.Image`
   width: 50px;
   height: 70px;
   border-radius: 4px;
-  background-color: red;
+  background-color: #eee;
 `;
 
 export const Description = styled.Text`

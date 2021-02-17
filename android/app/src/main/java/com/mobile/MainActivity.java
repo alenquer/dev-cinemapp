@@ -1,5 +1,8 @@
 package com.mobile;
 
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.graphics.Color;
 import com.facebook.react.ReactActivity;
 
 public class MainActivity extends ReactActivity {
@@ -12,4 +15,20 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "mobile";
   }
+
+  @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // Set the Android background to white after 8 seconds 
+        // to fix the splashscreen flash when the keyboard is shown
+        new CountDownTimer(8000, 1000) {
+
+            public void onTick(long millisUntilFinished) {}
+
+            public void onFinish() {
+                getWindow().getDecorView().setBackgroundColor(Color.WHITE);
+            }
+
+        }.start();
+    }
 }
